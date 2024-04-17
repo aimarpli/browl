@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Juego Brawl Stars</title>
+    <style>
+        /* Estilos básicos para la página */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #FF5722;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecciona tu skin y nombre</h1>
+    <div>
+        <label for="skinSelect">Elige tu skin:</label>
+        <select id="skinSelect">
+            <option value="shelly">Shelly</option>
+            <option value="colt">Colt</option>
+            <!-- Agrega más opciones de skins aquí -->
+        </select>
+    </div>
+    <div>
+        <label for="nameInput">Ingresa tu nombre:</label>
+        <input type="text" id="nameInput" placeholder="Nombre">
+    </div>
+    <button onclick="jugar()">¡Jugar!</button>
+
+    <script>
+        function jugar() {
+            const selectedSkin = document.getElementById('skinSelect').value;
+            const playerName = document.getElementById('nameInput').value;
+            alert(`¡Bienvenido a nuestro juego! Tu skin es ${selectedSkin} y tu nombre es ${playerName}. ¡A luchar!`);
+        }
+    </script>
+</body>
+</html>
